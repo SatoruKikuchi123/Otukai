@@ -38,19 +38,13 @@ submit.addEventListener('click', () => {
 
         //削除ボタンをクリックし、イベントを発動（タスクが削除）
         deleteButton.addEventListener('click', () => {
-            deleteTasks(deleteButton);
+            // 削除ボタンを押下された行を取得
+            const pushTr = deleteButton.parentNode.parentNode;
+            // pushTrのインデックスを取得して行を削除する
+            pushTr.parentNode.deleteRow(pushTr.sectionRowIndex);
         });
     } else {
         alert("項目を全て選択してください！！");
     }
 
 });
-
-
-//削除ボタンにタスクを消す機能を付与
-const deleteTasks = (deleteButton) => {
-    // 削除ボタンを押下された行を取得
-    const pushTr = deleteButton.parentNode.parentNode;
-    // pushTrのインデックスを取得して行を削除する
-    pushTr.parentNode.deleteRow(pushTr.sectionRowIndex);
-};
