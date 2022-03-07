@@ -10,14 +10,14 @@
 <body>
     <h1>おつかい-List</h1>
     <form>
-        <!-- <input class="task_value" type="text" />
-        <button class="task_submit" type="button">登録</button> -->
 
         <label for=nameList>依頼者を選択</label>
         <select id="requester">
             <option value="">選択</option>
             <option value="菊地">菊地</option>
-            <option value="柴山">柴山</option>
+            <option value="山田">山田</option>
+            <option value="小島">小島</option>
+            <option value="宮島">宮島</option>
         </select>
 
         <label for=goodsList>品を選択</label>
@@ -25,6 +25,8 @@
             <option value="">選択</option>
             <option value="洗浄液">洗浄液</option>
             <option value="M6ボルト">M6ボルト</option>
+            <option value="コスモカラー">コスモカラー</option>
+            <option value="ウエス">ウエス</option>
         </select>
 
         <label for=numberList>数量を選択</label>
@@ -32,6 +34,8 @@
             <option value="">選択</option>
             <option value=1>1</option>
             <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
         </select>
 
         <button class="submit" type="button">登録</button>
@@ -40,7 +44,7 @@
 
     <!-- おつかいlistをテーブルで作成 -->
     <div id="table">
-        <h2>おつかいList</h2>
+        <h2>List</h2>
         <table border="1" id="targetTable">
             <thead>
                 <tr>
