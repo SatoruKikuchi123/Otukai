@@ -9,40 +9,29 @@ html {
     font-family: serif;
 }
 
-body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-}
-
-.task_value {
-    height: 1.5rem;
-}
-
-.task_submit {
+.submit {
     height: 2rem;
 }
 
 #table {
     background-color: rgb(224, 211, 255);
-    width: 50%;
+    width: 60%;
     height: 600px;
     border-radius: 1rem;
     margin-top: 2rem;
-    opacity: 0.9
 }
 
-h2 {
-    font-size: 1.2rem;
-    padding: 1rem;
+th,
+td {
+    border: solid 1px;
+    /* 枠線指定 */
 }
 
-li {
-    margin: 2rem 2rem 2rem 0;
-    display: flex;
-    justify-content: space-between;
+table {
+    border-collapse: collapse;
+    /* セルの線を重ねる */
+    width: 100%;
+    /* 幅指定 */
+    table-layout: fixed;
+    /* セルの幅計算指定 */
 }
