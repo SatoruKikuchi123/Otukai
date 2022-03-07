@@ -7,7 +7,7 @@
 
 【くふう点】
 
-・if文で各選択項目が１つでも選択されていなければ全て入力することを促すメッセージを表示
+・if文を使って各選択項目が１つでも選択されていなければ全て入力することを促すメッセージを表示
 
 if (requester.value !== "" && goods.value !== "" && number.value !== "") 
 
@@ -15,17 +15,20 @@ if (requester.value !== "" && goods.value !== "" && number.value !== "")
 ⇒sectionRowIndexで取得された行のインデックスを削除。
 
 // 削除ボタンを押下された行を取得
+
 const pushTr = deleteButton.parentNode.parentNode;
             
-// pushTrのインデックスを取得して行を削除するpushTr.parentNode.deleteRow(pushTr.sectionRowIndex);
+// pushTrのインデックスを取得して行を削除する
+
+pushTr.parentNode.deleteRow(pushTr.sectionRowIndex);
 
 【課題】
 
-実用的にOtukaiを使うためには誰の端末でも登録されたリストが見れて編集するためにサーバを使ったコードに改善する必要がある
+実用的にOtukaiを使うためには誰の端末でも登録されたリストが見れて編集、更新ができなければならない。その為にはサーバを使ったモノに改善する必要がある
 
 【感想】
 
 Otukai製作では慣れないDOM操作が多く苦戦したが、一つ一つ使い方を調べて製作することで
 とてもいい練習になった。また、HTMLで骨格を作り　CSSで見た目を整え　jsで動きをつけるという
 ３つの言語のそれぞれの役割を改めて理解することができた。今後も今まで学んだことを忘れないよう
-復習し、新たな知識を増やしてできることの幅を広げたいと思った。
+復習し、新たな知識を増やしてできることの幅を広げていきたいと思います。
